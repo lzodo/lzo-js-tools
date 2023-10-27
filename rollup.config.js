@@ -11,9 +11,9 @@ const { terser } = require("rollup-plugin-terser");
 module.exports = {
   input: "lib/main.js",
   output: {
-    file: "dist/main.js",
+    file: "dist/lzojstools.js",
     format: "umd",
-    name: "buildName",
+    name: "jstools",
     sourcemap: false,
   },
   external: ["lodash"],
@@ -21,6 +21,6 @@ module.exports = {
     commonjs(),
     nodeResolve(),
     babel({ babelHelpers: "bundled", exclude: /node_modules/ }),
-    terser(),
+    // terser(),
   ],
 };

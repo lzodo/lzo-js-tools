@@ -1,10 +1,15 @@
 {
-  "name": "lzo-js-tool",
-  "version": "1.0.0",
+  "name": "lzo-js-tools",
+  "version": "1.1.7",
   "description": "",
-  "main": "dist/index.js",
+  "main": "./dist/lzojstools.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
-    "build": "npx rollup -c"
+    "build": "npx rollup -c",
+    "dev": "npx rollup -c",
+    "pub": "npm publish --registry=https://registry.npmjs.org"
   },
   "keywords": [],
   "author": "",
